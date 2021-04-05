@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layar"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/judul"
+        android:layout_width="230dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/judul"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/pemain1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/pemain1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul" />
+
+
+    <ImageButton
+        android:id="@+id/btnBatu"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:scaleType="centerCrop"
+        android:background="#00000000"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="@+id/pemain1"
+        app:layout_constraintStart_toStartOf="@id/pemain1"
+        app:layout_constraintTop_toBottomOf="@id/pemain1" />
+
+    <ImageButton
+        android:id="@+id/btnKertas"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="@id/btnBatu"
+        app:layout_constraintStart_toStartOf="@id/btnBatu"
+        app:layout_constraintTop_toBottomOf="@id/btnBatu" />
+
+
+    <ImageButton
+        android:id="@+id/btnGunting"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="#00000000"
+        android:layout_marginTop="30dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gunting"
+        app:layout_constraintEnd_toEndOf="@id/btnKertas"
+        app:layout_constraintStart_toStartOf="@id/btnKertas"
+        app:layout_constraintTop_toBottomOf="@id/btnKertas" />
+
+    <ImageView
+        android:id="@+id/com"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/com"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/judul" />
+
+    <ImageView
+        android:id="@+id/batuPc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/batu"
+        app:layout_constraintEnd_toEndOf="@id/com"
+        app:layout_constraintStart_toStartOf="@id/com"
+        app:layout_constraintTop_toBottomOf="@id/com" />
+
+    <ImageView
+        android:id="@+id/kertasPc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/kertas"
+        app:layout_constraintEnd_toEndOf="@+id/batuPc"
+        app:layout_constraintStart_toStartOf="@id/com"
+        app:layout_constraintTop_toBottomOf="@id/batuPc" />
+
+    <ImageView
+        android:id="@+id/guntingPc"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/gunting"
+        app:layout_constraintStart_toStartOf="@id/com"
+        app:layout_constraintTop_toBottomOf="@id/kertasPc" />
+
+    <ImageView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_vs"
+        app:layout_constraintEnd_toStartOf="@id/com"
+        app:layout_constraintStart_toEndOf="@id/pemain1"
+        app:layout_constraintTop_toBottomOf="@id/batuPc" />
+
+
+    <ImageButton
+        android:id="@+id/btnRefresh"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00000000"
+        android:scaleType="centerCrop"
+        android:src="@drawable/refresh"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
